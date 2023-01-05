@@ -1,1 +1,1 @@
-{"date": "2023-04-19T00:00:00", "commit": 3, "message": "docs: add API documentation for certificate endpoints"}
+{"date": "2023-01-06T00:00:00", "commit": 2, "message": "config: set up Flask-Migrate for database migrations"}
