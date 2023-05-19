@@ -1,1 +1,1 @@
-{"date": "2023-04-05T00:00:00", "commit": 61, "message": "security: prevent XSS in certificate display"}
+{"date": "2023-05-20T00:00:00", "commit": 60, "message": "fix: resolve QR code image encoding issue"}
