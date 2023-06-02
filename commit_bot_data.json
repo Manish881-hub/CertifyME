@@ -1,1 +1,1 @@
-{"date": "2023-11-20T00:00:00", "commit": 69, "message": "security: add CSRF protection to all forms"}
+{"date": "2023-06-03T00:00:00", "commit": 68, "message": "feat: add QR code generation for certificate verification"}
