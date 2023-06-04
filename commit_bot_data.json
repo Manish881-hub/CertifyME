@@ -1,1 +1,1 @@
-{"date": "2023-06-06T00:00:00", "commit": 51, "message": "db: add unique constraint on certificate fields"}
+{"date": "2023-06-05T00:00:00", "commit": 50, "message": "chore: add type checking with mypy"}
