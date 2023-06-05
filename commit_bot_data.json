@@ -1,1 +1,1 @@
-{"date": "2023-03-10T00:00:00", "commit": 52, "message": "chore: clean up migration files"}
+{"date": "2023-06-06T00:00:00", "commit": 51, "message": "db: add unique constraint on certificate fields"}
