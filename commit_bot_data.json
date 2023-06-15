@@ -1,1 +1,1 @@
-{"date": "2023-04-17T00:00:00", "commit": 37, "message": "db: add Certificate model with student and course fields"}
+{"date": "2023-06-16T00:00:00", "commit": 36, "message": "security: add SQL injection prevention"}
