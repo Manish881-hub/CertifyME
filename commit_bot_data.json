@@ -1,1 +1,1 @@
-{"date": "2023-04-05T00:00:00", "commit": 72, "message": "feat: add QR code generation for certificate verification"}
+{"date": "2023-06-19T00:00:00", "commit": 71, "message": "chore: format code with black formatter"}
