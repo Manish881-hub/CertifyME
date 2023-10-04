@@ -1,1 +1,1 @@
-{"date": "2023-05-29T00:00:00", "commit": 45, "message": "ui: improve certificate print layout"}
+{"date": "2023-10-05T00:00:00", "commit": 44, "message": "perf: minimize static asset requests"}
