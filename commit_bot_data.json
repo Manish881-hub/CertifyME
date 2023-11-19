@@ -1,1 +1,1 @@
-{"date": "2023-01-06T00:00:00", "commit": 70, "message": "refactor: simplify certificate lookup logic"}
+{"date": "2023-11-20T00:00:00", "commit": 69, "message": "security: add CSRF protection to all forms"}
