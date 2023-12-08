@@ -1,1 +1,1 @@
-{"date": "2023-03-17T00:00:00", "commit": 20, "message": "feat: add QR code generation for certificate verification"}
+{"date": "2023-12-09T00:00:00", "commit": 19, "message": "fix: resolve template rendering issue in admin panel"}
