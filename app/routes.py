@@ -47,3 +47,16 @@ def certificate(id):
     img_str = base64.b64encode(buffered.getvalue()).decode()
     
     return render_template('certificate.html', certificate=cert, date=date.today(), qr_code=img_str)
+
+@app.route('/admin')
+def admin():
+    certificates = Certificate.query.all()
+    return render_template('admin.html', certificates=certificates)
+
+@app.route('/admin/delete/<int:id>', methods=['POST'])
+def delete_certificate(id):
+    cert = Certificate.query.get_or_404(id)
+    db.session.delete(cert)
+    db.session.commit()
+    flash(f'Certificate for {cert.student_name} deleted.')
+    return redirect(url_for('admin'))
