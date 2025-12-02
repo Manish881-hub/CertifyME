@@ -4,6 +4,7 @@
 <head>
     <title>Certificate of Completion</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
     <style>
         body {
             background-color: #f0f0f0;
@@ -16,56 +17,56 @@
 
         .certificate-container {
             background: white;
-            width: 800px;
-            height: 600px;
-            padding: 50px;
-            border: 10px solid #ddd;
-            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-            text-align: center;
+            width: 850px;
+            height: 620px;
+            padding: 30px;                 /* Reduced to make more space inside */
+            border: 12px solid #dcdcdc;     /* Elegant light-grey outer border */
+            box-shadow: 0 0 18px rgba(0, 0, 0, 0.12);
             position: relative;
         }
 
         .certificate-border {
-            border: 5px solid #2c3e50;
+            border: 4px solid #2c3e50;      /* Clean sharp inner border */
             height: 100%;
-            padding: 40px;
+            padding: 50px 40px;             /* Increased for better spacing */
+            text-align: center;
             display: flex;
             flex-direction: column;
-            justify-content: center;
+            justify-content: flex-start;    /* Prevents content from being pushed */
         }
 
         .header {
             font-family: 'Times New Roman', serif;
-            font-size: 48px;
+            font-size: 46px;
             color: #2c3e50;
-            margin-bottom: 20px;
+            margin-bottom: 15px;
         }
 
         .sub-header {
-            font-size: 24px;
+            font-size: 22px;
             color: #7f8c8d;
-            margin-bottom: 40px;
+            margin-bottom: 30px;
         }
 
         .student-name {
             font-family: 'Cursive', sans-serif;
-            /* Fallback */
-            font-size: 60px;
+            font-size: 58px;
             color: #e67e22;
             border-bottom: 2px solid #2c3e50;
             display: inline-block;
-            padding: 0 20px;
-            margin-bottom: 30px;
+            padding: 0 15px;
+            margin-bottom: 25px;
         }
 
         .course-name {
-            font-size: 32px;
+            font-size: 30px;
             font-weight: bold;
             color: #2c3e50;
+            margin-top: 10px;
         }
 
         .footer {
-            margin-top: 60px;
+            margin-top: auto;                /* Push footer to bottom naturally */
             font-size: 18px;
             color: #95a5a6;
         }
@@ -73,19 +74,26 @@
 </head>
 
 <body>
+
     <div class="certificate-container">
         <div class="certificate-border">
             <div class="header">Certificate of Completion</div>
+
             <div class="sub-header">This is to certify that</div>
+
             <div class="student-name">{{ certificate.student_name }}</div>
+
             <div class="sub-header">has successfully completed the course</div>
+
             <div class="course-name">{{ certificate.course }}</div>
+
             <div class="footer">
                 Issued by CertifyMe Demo<br>
                 Date: {{ date }}
             </div>
         </div>
     </div>
+
 </body>
 
 </html>
