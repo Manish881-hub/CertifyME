@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="jumbotron">
+    <h1>Hello, Manish!</h1>
+    <p>Welcome to the CertifyMe Candidate Demo.</p>
+    <p>Status: <span class="badge bg-success">Ready for Forms</span></p>
+
+    <div class="row">
+        <div class="col-md-6">
+            <form action="" method="post" novalidate>
+                {{ form.hidden_tag() }}
+                <div class="mb-3">
+                    {{ form.student_name.label(class="form-label") }}
+                    {{ form.student_name(class="form-control", size=32) }}
+                    {% for error in form.student_name.errors %}
+                    <span style="color: red;">[{{ error }}]</span>
+                    {% endfor %}
+                </div>
+                <div class="mb-3">
+                    {{ form.course.label(class="form-label") }}
+                    {{ form.course(class="form-control", size=32) }}
+                    {% for error in form.course.errors %}
+                    <span style="color: red;">[{{ error }}]</span>
+                    {% endfor %}
+                </div>
+                <p>{{ form.submit(class="btn btn-primary") }}</p>
+            </form>
+        </div>
+    </div>
+</div>
+{% endblock %}
